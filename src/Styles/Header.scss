@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  padding: 2rem;
+  height: 15vh;
+  background: #000;
+  align-items: center;
+
+  img {
+    max-width: 32%;
+    max-height: 5vh;
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 90%;
+    font-size: 1.5rem;
+
+    a {
+      color: #1bbfe9;
+
+      p {
+        font-family: "Roboto";
+        position: absolute;
+        background-color: #fff;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        font-size: 1rem;
+        text-align: center;
+        transform: translate(140%, -110%);
+      }
+    }
+  }
+}
