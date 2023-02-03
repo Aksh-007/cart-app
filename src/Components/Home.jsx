@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-hot-toast";
+import { useDispatch } from "react-redux";
 import "../Styles/Home.scss";
 import ProductCard from "./ProductCard";
 
@@ -15,18 +16,22 @@ const Home = () => {
       name: "Mac Book",
       price: 12000,
       imgSrc: img1,
-      id: "asdhajsdbhjabhsjdfdfv",
+      id: "1",
     },
     {
       name: "Black Shoes",
       price: 490,
       imgSrc: img2,
-      id: "sdjfdlaajsdbhjabhsjdfdfv",
+      id: "2",
     },
   ];
 
+  const dispatch = useDispatch()
+
   const addToCartHandler = (options) => {
     console.log(options);
+    dispatch({type:"addToCart", payload:options});
+    dispatch({type:"calculatePrice"});
     toast.success('Added to Cart');
   };
 
@@ -35,7 +40,7 @@ const Home = () => {
       {productList.map((i) => (
         <ProductCard
           key={i.id}
-          src={i.imgSrc}
+          imgSrc={i.imgSrc}
           name={i.name}
           price={i.price}
           id={i.id}

@@ -4,10 +4,13 @@ nav {
   height: 15vh;
   background: #000;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 
   img {
-    max-width: 32%;
-    max-height: 5vh;
+    max-width: 22%;
+    max-height: 7vh;
   }
 
   div {
@@ -29,7 +32,7 @@ nav {
         width: 17px;
         font-size: 1rem;
         text-align: center;
-        transform: translate(140%, -110%);
+        transform: translate(130%, -190%);
       }
     }
   }
