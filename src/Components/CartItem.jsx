@@ -1,18 +1,20 @@
 import React from "react";
-import {AiOutlinePlus,AiOutlineMinus,AiTwotoneDelete} from 'react-icons/ai'
-
-
+import { AiOutlinePlus, AiOutlineMinus, AiTwotoneDelete } from "react-icons/ai";
+// import { useDispatch, useSelector } from "react-redux";
 
 const CartItem = ({
   imgSrc,
-  name ,
-  price  ,
-  quantity ,
+  name,
+  price,
+  quantity,
+  subTotal,
   decrement,
   increment,
   deleteHandler,
-  id ,
+  id,
 }) => {
+  // const { subTotal } = useSelector((state) => state.cart);
+  // const dispatch = useDispatch();
   return (
     // <div className="cartItem">
     //   <img src={src} alt={name} />
@@ -29,42 +31,49 @@ const CartItem = ({
     //   <AiFillDelete onClick={() => deleteHandler(id)}/>
     // </div>
 
-     <div className="basket-product">
-          <div className="item">
-            <div className="product-image">
-              <img
-                src={imgSrc}
-                alt={name}
-                className="product-frame"
-              />
-            </div>
-            <div className="product-details">
-              <h1>
-                {/* <strong> */}
-                  <span className="item-quantity"> Product Details:</span>
-                {/* </strong> */}
-                {/* Lace Sleeve Cuff Dress */}
-              </h1>
-              <p>
-                <strong>{name}</strong>
-              </p>
-              {/* <p>Product Code - {id}</p> */}
-            </div>
-          </div>
-          <div className="price">{price}</div>
-          <div className="quantity">
-            <AiOutlineMinus className="cursor" size={25} onClick={()=> decrement(id)}/ >
-            <input type="number" value={quantity} min="1" className="quantity-field" />
-            <AiOutlinePlus  className="cursor" size={25} onClick={()=> increment(id)}/>
-          </div>
-          <div className="subtotal">{price}</div>
-          <div className="remove">
-            {/* <button>Remove</button> */}
-            <AiTwotoneDelete className="cursor" onClick={()=> deleteHandler(id)}/>
-          </div>
-        </div> 
-
-
+    <div className="basket-product">
+      <div className="item">
+        <div className="product-image">
+          <img src={imgSrc} alt={name} className="product-frame" />
+        </div>
+        <div className="product-details">
+          <h1>
+            {/* <strong> */}
+            <span className="item-quantity"> Product Details:</span>
+            {/* </strong> */}
+            {/* Lace Sleeve Cuff Dress */}
+          </h1>
+          <p>
+            <strong>{name}</strong>
+          </p>
+          {/* <p>Product Code - {id}</p> */}
+        </div>
+      </div>
+      <div className="price">{price}</div>
+      <div className="quantity">
+        <AiOutlineMinus
+          className="cursor"
+          size={25}
+          onClick={() => decrement(id)}
+        />
+        <input
+          type="number"
+          value={quantity}
+          min="1"
+          className="quantity-field"
+        />
+        <AiOutlinePlus
+          className="cursor"
+          size={25}
+          onClick={() => increment(id)}
+        />
+      </div>
+      <div className="subtotal">{subTotal}</div>
+      <div className="remove">
+        {/* <button>Remove</button> */}
+        <AiTwotoneDelete className="cursor" onClick={() => deleteHandler(id)} />
+      </div>
+    </div>
   );
 };
 

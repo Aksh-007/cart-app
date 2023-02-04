@@ -62,6 +62,7 @@ const Cart = () => {
               name={i.name}
               price={i.price}
               quantity={i.quantity}
+              subTotal={subTotal}
               id={i.id}
               key={i.id}
               decrement={decrement}
