@@ -1,4 +1,5 @@
-$color_1: rgba(255, 255, 255, 0.04);
+$color_1: #232323;
+// $color_1: red;
 $color_2: #fff;
 $color_3: white;
 $color_4: #111;
@@ -60,7 +61,7 @@ $font-family_1: 'Poppins', sans-serif;
 			}
 		}
 		&:after {
-			// content: "3Brackets";
+			content: "3brackets";
 			position: absolute;
 			top: 30%;
 			left: -20%;
@@ -68,6 +69,7 @@ $font-family_1: 'Poppins', sans-serif;
 			font-weight: 800;
 			font-style: italic;
 			color: $color_1;
+			// color: #232323;
 		}
 		.imgBx {
 			position: absolute;

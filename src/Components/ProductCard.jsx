@@ -1,16 +1,21 @@
 import React from "react";
-import product from '../Assests/product.png'
 const ProductCard = ({
   name="default product" ,
   id,
   price=0,
   handler,
-  imgSrc=product,
+  imgSrc="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png",
   key
 }) => {
+
+  const style = {
+    ':after': {
+      content : {name}
+    }
+  };
   return (
     <div className="container" >
-      <div className="card">
+      <div className="card" style={{style}}>
         <div className="imgBx">
           <img src={imgSrc} alt={name} />
         </div>

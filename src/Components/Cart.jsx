@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./CartItem";
+// import { Link } from "react-router-dom";
 
 const Cart = () => {
   //here we are importing data from cartReducer/ storage
@@ -37,7 +38,7 @@ const Cart = () => {
     <main>
       <div className="basket">
         <div className="basket-module">
-          <label >Enter a promotional code</label>
+          <label>Enter a promotional code</label>
           <input
             id="promo-code"
             type="text"
@@ -71,9 +72,12 @@ const Cart = () => {
             />
           ))
         ) : (
-          <h1 style={{ textAlign: "center", marginTop: "15rem" }}>
-            No items yet
-          </h1>
+          <>
+            <h1 style={{ textAlign: "center", marginTop: "15rem" }}>
+              No items yet
+            </h1>
+            {/* <Link to={"/"} style={{ textAlign: "center", marginTop: "15rem" }}>Home</Link> */}
+          </>
         )}
       </div>
       <aside>
@@ -94,7 +98,7 @@ const Cart = () => {
           <div className="summary-subtotal">
             <div className="subtotal-title">Shipping :</div>
             <div className="subtotal-value final-value" id="basket-subtotal">
-             {shipping}
+              {shipping}
             </div>
             {/* <div className="summary-promo hide">
               <div className="promo-title">Promotion</div>
