@@ -4,18 +4,17 @@ const ProductCard = ({
   id,
   price=0,
   handler,
-  imgSrc="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png",
-  key
+  imgSrc="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png"
 }) => {
 
-  const style = {
-    ':after': {
-      content : {name}
-    }
-  };
+  // const style = {
+  //   ':after': {
+  //     content : {name}
+  //   }
+  // };
   return (
     <div className="container" >
-      <div className="card" style={{style}}>
+      <div className="card" >
         <div className="imgBx">
           <img src={imgSrc} alt={name} />
         </div>
