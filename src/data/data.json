@@ -1,7 +1,7 @@
 [
   {
     "name": "Mac Book",
-    "price": "12000",
+    "price": 120000,
     "imgSrc": "https://www.reliancedigital.in/medias/Apple-MGN63HNA-Laptops-491946461-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzczNDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDVhL2gyZC85NDQzMDgzNTgzNTE4LmpwZ3xhYzRiNWIxZGQ2NjNiNWIyYjI0Y2ZkYTZlZWQ3MTFjZTMxYzVmNDBiNmM5Mzk5OTM2OGVkZmExMjMyYjIxNDQ4",
     "id": "1"
   },
@@ -85,12 +85,12 @@
   },
   {
     "name": "Mi Notebook 14",
-    "price": "From ₹ 41,999",
+    "price": 41999,
     "imgSrc": "https://i01.appmifile.com/webfile/globalimg/in/cms/9534EF41-E7D9-025C-A287-B4BAFCA4A0F9.jpg?width=140&height=140"
   },
   {
     "name": "Mi NoteBook 14 e-Learning Edition",
-    "price": "₹ 38,999",
+    "price": 38999,
     "imgSrc": "https://i02.appmifile.com/234_operator_in/05/11/2020/5b641713340b4a542b75cf737ed2cd80.png?width=140&height=140"
   },
   {
